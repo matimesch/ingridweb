@@ -2,16 +2,16 @@ import Layout from "../components/Layout";
 
 const myStyle = {
   backgroundImage: "url('/images/tapa3.jpg')",
-  height: "100vh",
+  height: "140vh",
   fontSize: "50px",
-  backgroundSize: "100% 100%",
+  backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
 };
 const myStyle2 = {
   backgroundImage: "url('/images/parte_atras.jpg')",
-  height: "100vh",
+  height: "140vh",
   fontSize: "50px",
-  backgroundSize: "100% 100%",
+  backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
 };
 
@@ -31,8 +31,12 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <div style={myStyle}></div>
-      <div style={myStyle2}></div>
+      <div className="row">
+        <div className="col">
+          <div style={myStyle}></div>
+          <div style={myStyle2}></div>
+        </div>
+      </div>
     </>
   </Layout>
 );
